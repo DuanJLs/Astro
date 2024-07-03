@@ -1,0 +1,15 @@
+/* styles.css */
+body {
+    background-color: #f0f0f0;
+    /* 默认背景颜色 */
+}
+
+#page1 {
+    background-image: url("../pages/image/md25.jpg");
+    /* 页面1的背景图片 */
+}
+
+#page2 {
+    background-color: #ffcc00;
+    /* 页面2的背景颜色 */
+}

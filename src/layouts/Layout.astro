@@ -18,8 +18,30 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<footer>
+			<p>版权所有 &copy; 2024 Duan保留所有权利。</p>
+			<p>
+				本网站设计内容中遵循
+				<a
+					href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+				>
+					署名-非商业性使用-相同方式共享 4.0 国际（CC BY-NC-SA 4.0）</a
+				> 许可协议。
+			</p>
+			<style>
+				a {
+					color: #ffffff;
+					text-align: center;
+				}
+				p {
+					color: #ffffff;
+					text-align: center;
+				}
+			</style>
+		</footer>
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;

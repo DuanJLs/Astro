@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+    title: string;
+    body: string;
+    href: string;
+    image: string; // 添加一个Image类型的属性来接收图片
+}
+
+const { href, title, body, image } = Astro.props;
+---
+
+<li class="custom-card">
+    <a href={href}>
+        <div class="card-content">
+            <h2>{title}</h2>
+            <p>{body}</p>
+        </div>
+        <!-- 在这里插入图片 -->
+        <img src={image} alt={image} />
+    </a>
+
+    <style>
+        .custom-card {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .custom-card > a {
+            text-decoration: none;
+            color: black;
+        }
+        .custom-card > a > img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card-content {
+            margin-bottom: 1rem;
+        }
+    </style>
+</li>

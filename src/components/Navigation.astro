@@ -1,28 +1,37 @@
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/blog">Blog</a>
-<a href="/books">Book</a>
-<a href="/notes">Note</a>
+<main>
+    <li><img src="../pages/image/logo1.jpg" alt="Logo" /></li>
+    <a href="/">首页</a>
+    <a href="/about">关于</a>
+    <a href="/tuanyuan">团员</a>
+    <a href="/zhuanji">专辑</a>
+    <a href="/yanchanghui">演唱会</a>
+</main>
 <style>
-    body {
-        margin: 0;
+    a {
+        margin: 1em;
         padding: 0;
         font-family: Arial, sans-serif;
-    }
-
-    .navbar {
-        background-color: #333; /* 导航栏背景颜色 */
-        text-align: center;
-    }
-
-    .navbar a {
-        color: #fff; /* 字体颜色 */
+        color: #000000; /* 字体颜色 */
         text-decoration: none;
-        padding: 14px 20px; /* 导航标签的内边距 */
+        padding: 0em; /* 导航标签的内边距 */
         display: inline-block;
     }
 
-    .navbar a:hover {
-        background-color: #555; /* 鼠标悬停时的背景颜色 */
+    a:hover {
+        background-color: #388896; /* 鼠标悬停时的背景颜色 */
+    }
+
+    main {
+        background-color: #ffffff; /* 导航栏背景颜色 */
+        text-align: center;
+        border-radius: 5cm;
+        border: 2cm;
+        border-width: 2cap;
+        display: flex; /* 使用Flexbox布局 */
+        justify-content: space-between; /* 使列表项之间的间距平均分布 */
+    }
+    img {
+        width: 100%;
+        height: auto;
     }
 </style>
