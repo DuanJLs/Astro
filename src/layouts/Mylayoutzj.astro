@@ -1,0 +1,47 @@
+---
+import Navigation from "../components/Navigation.astro";
+
+import Footer from "../components/Footer.astro";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <style>
+            body {
+                background-image: url("../pages/image/wytzj.jpg");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-color: black;
+            }
+            body {
+                position: relative;
+                min-height: 100vh;
+            }
+
+            main {
+                padding-bottom: 50px; /* Adjust this value based on the height of your footer */
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+          
+        </style>
+    </head>
+    <body>
+        <main>
+            <slot />
+        </main>
+
+        <Footer />
+
+        <!-- 页面内容 -->
+    </body>
+</html>
