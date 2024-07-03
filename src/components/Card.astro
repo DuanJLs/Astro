@@ -12,10 +12,11 @@ const { href, title, body } = Astro.props;
 
 <li class="link-card">
 	<a href={href}>
+		<slot />
 		<h2>
 			{title}
-			<span>&rarr;</span>
 		</h2>
+
 		<p>
 			{body}
 		</p>
@@ -26,14 +27,23 @@ const { href, title, body } = Astro.props;
 			list-style: none;
 			display: flex;
 			padding: 1px;
-			background-color: #23262d;
+			background-color: #eceef0;
 			background-image: none;
 			background-size: 400%;
 			border-radius: 7px;
 			background-position: 100%;
 			transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+			width: 400px; /* 设置card的宽度 */
+			margin-left: 0; /* 设置card左边距为0，实现左对齐 */
+			margin: auto; /* 设置外边距为自动 */
+			padding: 1rem; /* 设置内边距为1rem */
+			width: 400px; /* 设置宽度为800px */
+			max-width: calc(100% - 2rem); /* 设置最大宽度为100%减去2rem */
+			margin-bottom: 1rem; /* 设置card的下边距为1rem，实现行间距 */
+			opacity: 0.8; /* 设置card的初始不透明度为0.8 */
 		}
+
 		.link-card > a {
 			width: 100%;
 			text-decoration: none;
@@ -59,6 +69,8 @@ const { href, title, body } = Astro.props;
 		}
 		.link-card:is(:hover, :focus-within) h2 {
 			color: rgb(var(--accent-light));
+		}
+		image {
 		}
 	</style>
 </li>

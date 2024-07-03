@@ -1,5 +1,9 @@
+---
+import { Image } from "astro:assets";
+---
+
 <main>
-    <li><img src="../pages/image/logo1.jpg" alt="Logo" /></li>
+    <li><img src="src/pages/image/logo1.jpg" alt="Logo" /></li>
     <a href="/">首页</a>
     <a href="/about">关于</a>
     <a href="/tuanyuan">团员</a>
@@ -31,7 +35,9 @@
         justify-content: space-between; /* 使列表项之间的间距平均分布 */
     }
     img {
-        width: 100%;
-        height: auto;
+        display: inline-block; /* 将logo图片设为内联块级元素 */
+        height: 50px; /* 设置logo图片的高度 */
+        margin: auto 0; /* 设置logo图片的上下外边距为自动，左右外边距为0 */
+        vertical-align: middle; /* 设置logo图片垂直对齐方式为居中 */
     }
 </style>

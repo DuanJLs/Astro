@@ -6,123 +6,114 @@ import Navigation from "../components/Navigation.astro";
 
 <Mylayoutmember title="Welcome to Astro">
     <main>
-        <svg
-            class="astro-a"
-            width="495"
-            height="623"
-            viewBox="0 0 495 623"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-        >
-            <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                fill="url(#paint0_linear_1805_24383)"></path>
-            <defs>
-                <linearGradient
-                    id="paint0_linear_1805_24383"
-                    x1="247.358"
-                    y1="0"
-                    x2="247.358"
-                    y2="622.479"
-                    gradientUnits="userSpaceOnUse"
-                >
-                    <stop stop-opacity="0.9"></stop>
-                    <stop offset="1" stop-opacity="0.2"></stop>
-                </linearGradient>
-            </defs>
-        </svg>
         <Navigation />
         <h1>全天下最完美的阵容</h1>
+        <picture>
+            <img src="src/pages/image/monster.png" alt="怪兽温尚翊" />
+            <img src="src/pages/image/masa.png" alt="玛莎蔡昇晏" />
+            <img src="src/pages/image/ashin.png" alt="阿信陈信宏" />
+            <img src="src/pages/image/ming.png" alt="冠佑刘谚明" />
+            <img src="src/pages/image/stone.png" alt="石头石锦航" />
+        </picture>
     </main>
-    <p class="instructions">
-        To get started, open the directory <code>src/pages</code> in your project.<br
-        />
-        <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
-    <ul role="list" class="link-card-grid">
-        <Card
-            href="https://docs.astro.build/"
-            title="Documentation"
-            body="Learn how Astro works and explore the official API docs."
-        />
-        <Card
-            href="https://astro.build/integrations/"
-            title="Integrations"
-            body="Supercharge your project with new frameworks and libraries."
-        />
-        <Card
-            href="https://astro.build/themes/"
-            title="Themes"
-            body="Explore a galaxy of community-built starter themes."
-        />
-        <Card
-            href="https://astro.build/chat/"
-            title="Community"
-            body="Come say hi to our amazing Discord community. ❤️"
-        />
-    </ul>
-</Mylayoutmember>
 
-<style>
-    main {
-        margin: auto;
-        padding: 1rem;
-        width: 800px;
-        max-width: calc(100% - 2rem);
-        color: white;
-        font-size: 20px;
-        line-height: 1.6;
-    }
-    .astro-a {
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 220px;
-        height: auto;
-        z-index: -1;
-    }
-    h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin-bottom: 1em;
-    }
-    .text-gradient {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
-    }
-    .instructions {
-        margin-bottom: 2rem;
-        border: 1px solid rgba(var(--accent-light), 25%);
-        background: linear-gradient(
-            rgba(var(--accent-dark), 66%),
-            rgba(var(--accent-dark), 33%)
-        );
-        padding: 1.5rem;
-        border-radius: 8px;
-    }
-    .instructions code {
-        font-size: 0.8em;
-        font-weight: bold;
-        background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
-        border-radius: 4px;
-        padding: 0.3em 0.4em;
-    }
-    .instructions strong {
-        color: rgb(var(--accent-light));
-    }
-    .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 2rem;
-        padding: 0;
-    }
-</style>
+    <li class="link-card" style="display: block;">
+        <Card
+            href="https://weibo.com/u/1691327452"
+            title="Monster怪兽（温尚翊）"
+            body="五月天团长兼吉他手🎸"
+        />
+        <Card
+            href="https://weibo.com/u/2662321241"
+            title="Stone石头（石锦航）"
+            body="五月天吉他手🎸"
+        />
+        <Card
+            href="https://weibo.com/u/2661627953"
+            title="Masa玛莎（蔡昇晏）"
+            body="五月天贝斯手"
+        />
+        <Card
+            href="https://weibo.com/u/2263684130"
+            title="Ming冠佑（刘谚明）"
+            body="五月天鼓手🥁"
+        />
+        <Card
+            href="https://weibo.com/u/1265020392"
+            title="Ashin阿信（陈信宏）"
+            body="五月天主唱🎤"
+        >
+            <style>
+                main {
+                    margin: auto;
+                    padding: 1rem;
+                    width: 800px;
+                    max-width: calc(100% - 2rem);
+                    color: white;
+                    font-size: 20px;
+                    line-height: 1.6;
+                }
+                .astro-a {
+                    position: absolute;
+                    top: -32px;
+                    left: 50%;
+                    transform: translatex(-50%);
+                    width: 220px;
+                    height: auto;
+                    z-index: -1;
+                }
+                h1 {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    line-height: 1;
+                    text-align: center;
+                    margin-bottom: 1em;
+                }
+                .text-gradient {
+                    background-image: var(--accent-gradient);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-size: 400%;
+                    background-position: 0%;
+                }
+                .instructions {
+                    margin-bottom: 2rem;
+                    border: 1px solid rgba(var(--accent-light), 25%);
+                    background: linear-gradient(
+                        rgba(var(--accent-dark), 66%),
+                        rgba(var(--accent-dark), 33%)
+                    );
+                    padding: 1.5rem;
+                    border-radius: 8px;
+                }
+                .instructions code {
+                    font-size: 0.8em;
+                    font-weight: bold;
+                    background: rgba(var(--accent-light), 12%);
+                    color: rgb(var(--accent-light));
+                    border-radius: 4px;
+                    padding: 0.3em 0.4em;
+                }
+                .instructions strong {
+                    color: rgb(var(--accent-light));
+                }
+                .link-card-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+                    gap: 2rem;
+                    padding: 0;
+                }
+                picture {
+                    display: flex;
+                    height: 100px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1em;
+                    display: flex; /* 使用Flexbox布局 */
+                    justify-content: space-between; /* 使列表项之间的间距平均分布 */
+                }
+            </style>
+        </Card>
+    </li>
+</Mylayoutmember>
