@@ -11,28 +11,9 @@ import Navigation from "../components/Navigation.astro";
         <h1>🖐️🖐️🖐️🖐️🖐️</h1>
         <p class="instructions">
             "拿起荧光棒"<br />
-            让我们<strong>Party party all night</strong> !!!
+            让我们<strong>Party party all night</strong> ❗❗❗❗❗
         </p>
-        <ul>
-            <li>
-                <a href="/md/发疯日记 慎入">我的随手记（发疯日记</a>
-                <!-- 相对路径 -->
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <a href="/md/流浪地球">我的小破球🌏</a>
-                <!-- 相对路径 -->
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <a href="/md/mayday">我们是五月天！</a>
-                <!-- 相对路径 -->
-            </li>
-        </ul>
+        <ul></ul>
 
         <ul role="list" class="link-card-grid">
             <Card
@@ -44,16 +25,6 @@ import Navigation from "../components/Navigation.astro";
                 href="/md/ychzn"
                 title="五月天演唱会观看指南"
                 body="新来的wmls可以知道看演唱会时的一些默契"
-            />
-            <Card
-                href="https://astro.build/themes/"
-                title="Themes"
-                body="Explore a galaxy of community-built starter themes."
-            />
-            <Card
-                href="https://astro.build/chat/"
-                title="Community"
-                body="Come say hi to our amazing Discord community. ❤️"
             />
         </ul>
     </main>
@@ -69,15 +40,7 @@ import Navigation from "../components/Navigation.astro";
         font-size: 20px;
         line-height: 1.6;
     }
-    .astro-a {
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 220px;
-        height: auto;
-        z-index: -1;
-    }
+
     h1 {
         font-size: 4rem;
         font-weight: 700;
@@ -102,13 +65,14 @@ import Navigation from "../components/Navigation.astro";
         padding: 1.5rem;
         border-radius: 8px;
         text-align: center;
-        font-size: x-large;
+        font-size: xx-large;
+        color: rgb(0, 136, 255);
     }
     .instructions code {
-        font-size: 0.8em;
+        font-size: 10em;
         font-weight: bold;
         background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
+        color: aliceblue;
         border-radius: 4px;
         padding: 0.3em 0.4em;
     }
@@ -120,5 +84,8 @@ import Navigation from "../components/Navigation.astro";
         grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
         gap: 2rem;
         padding: 0;
+    }
+    p {
+        font-size: larger;
     }
 </style>

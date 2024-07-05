@@ -8,6 +8,12 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["Mayday", "五月天", "演唱会"]
 ---
+
+<a href="/">首页</a>
+    <a href="/about">关于</a>
+    <a href="/tuanyuan">团员</a>
+    <a href="/zhuanji">专辑</a>
+    <a href="/yanchanghui">演唱会</a>
 # <p style="text-align:center">加入五月天永远不会太迟！</p>
 ##### <p style="text-align:center">阿信在五月天好好好想见到你演唱会南京站说“我希望五月天不止是怪兽、不止是玛莎、不止是石头、不止是冠佑，我希望五月天的名字里面有你、有你、有你、有你、有你们！”</P>
 ---
