@@ -39,3 +39,10 @@ tags: ["Mayday", "五月天", "演唱会","指南"]
 <p>#五月天 #五月天5525回到那一天演唱会</p>
 
 </div>
+
+ <p>
+        版权所有 &copy; Duan保留所有权利。本网站设计内容中遵循
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+            署名-非商业性使用-相同方式共享 4.0 国际（CC BY-NC-SA 4.0）</a
+        > 许可协议。
+    </p>

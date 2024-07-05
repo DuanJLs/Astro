@@ -136,3 +136,10 @@ tags: ["Mayday", "五月天", "演唱会"]
 
  **2024.4.27**：《Just Love It公益演唱会》福建泉州
 </div>
+
+ <p>
+        版权所有 &copy; Duan保留所有权利。本网站设计内容中遵循
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+            署名-非商业性使用-相同方式共享 4.0 国际（CC BY-NC-SA 4.0）</a
+        > 许可协议。
+    </p>
